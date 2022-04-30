@@ -249,6 +249,6 @@ addEventListener('click', (event) => {
 startGameBtn.addEventListener('click', () => {
     init()
     animate()
-    spawnEnemiesInterval = setInterval(spawnEnemies, 2000)
+    spawnEnemiesInterval = setInterval(spawnEnemies, 20)
     modalEl.style.display = 'none'
 })
