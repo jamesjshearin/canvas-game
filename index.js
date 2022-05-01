@@ -233,7 +233,7 @@ function animate() {
 }
 
 addEventListener('click', (event) => {
-    for(let i = 0; i < 8; i++){
+    for(let i = 0; i < 1; i++){
      const angle = Math.atan2(event.clientY - canvas.height / 2, event.clientX - canvas.width / 2)
     const velocity = {
         x: Math.cos(angle + 0.785 * i) * 5,
@@ -244,13 +244,13 @@ addEventListener('click', (event) => {
         y,
         5,
         'white',
-        velocity))   
+        velocity))  
     }
 })
 
 startGameBtn.addEventListener('click', () => {
     init()
     animate()
-    spawnEnemiesInterval = setInterval(spawnEnemies, 20)
+    spawnEnemiesInterval = setInterval(spawnEnemies, 1000)
     modalEl.style.display = 'none'
 })
